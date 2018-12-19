@@ -1,0 +1,10 @@
+<h1>
+
+
+    Heroes <small>Marvel y DC</small></h1>
+<!--  <a [routerLink]="['/heroe',i]" class="btn btn-outline-primary btn-block">Ver mas...</a> -->
+<div class="card-columns">
+
+    <app-heroe-tarjeta (heroeSeleccionado)="enviar($event)" [heroe]="heroe" [id]="i" *ngFor="let heroe of heroes; let i=index "></app-heroe-tarjeta>
+
+</div>
